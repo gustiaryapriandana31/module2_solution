@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Peserta Lomba</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="">
+      <h1>Formulir Data Mahasiswa</h1>
+      <div class="elemen">
+        <div class="sideright">
+          <h2>~~~Identitas Utama~~~</h2>
+          <label for="email">Email<span>*</span></label> <br />
+          <input type="email" name="email" id="email" required />
+          <br />
+
+          <label for="nama">Nama<span>*</span></label> <br />
+          <input type="text" name="nama" id="nama" required /> <br />
+
+          <label for="nim">Nim<span>*</span></label> <br />
+          <input type="text" name="nim" id="nim" required /> <br />
+
+          <label for="prodi">Jurusan<span>*</span></label> <br />
+          <input type="text" name="prodi" id="prodi" required /> <br />
+
+          <label for="fakultas">Fakultas<span>*</span></label> <br />
+          <input type="text" name="fakultas" id="fakultas" required /> <br />
+
+          <label for="angkatan">Angkatan<span>*</span></label> <br />
+          <input type="text" name="angkatan" id="angkatan" required /> <br />
+
+          <label for="telepon">No Telp<span>*</span></label> <br />
+          <input type="number" name="telepon" id="telepon" required /> <br />
+        </div>
+
+        <div class="sideleft">
+          <h2>~~~Identitas Tambahan~~~</h2>
+          <label for="tanggal_lahir">Tanggal Lahir<span>*</span></label> <br />
+          <input type="date" name="tanggal_lahir" id="tanggal_lahir" required />
+          <br />
+
+          <label for="jenkel">Jenis kelamin<span>*</span></label> <br />
+          <input
+            type="radio"
+            name="jenkel"
+            id="jenkel"
+            value="laki-laki"
+            required
+          />Laki-laki
+          <input
+            type="radio"
+            name="jenkel"
+            id="jenkel"
+            value="perempuan"
+            required
+          />Perempuan <br />
+
+          <label for="agama">Agama<span>*</span></label> <br />
+          <select name="agama" id="agama" required>
+            <option value="Islam">Islam</option>
+            <option value="Kristen Protestan">Kristen Protestan</option>
+            <option value="Kristen Katolik">Kristen Katolik</option>
+            <option value="Hindhu">Hindhu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Kong Hu Chu">Kong Hu Chu</option>
+          </select>
+          <br />
+
+          <label for="kab">Kabupaten<span>*</span></label> <br />
+          <select name="kab" id="kab" required>
+            <option value="pilih">---Pilih Kabupaten---</option>
+            <option value="plg">Palembang</option>
+            <option value="pga">Kota Pagar Alam</option>
+            <option value="lblg">Kota Lubuk Linggau</option>
+            <option value="prb">Kota Prabumulih</option>
+            <option value="muratara">Kab. Musi Rawas Utara</option>
+            <option value="pali">Kab. Penukal Abab Lematang Ilir</option>
+            <option value="emla">Kab. Empat Lawang</option>
+            <option value="oi">Kab. Ogan Ilir</option>
+            <option value="okus">Kab. Ogan Komering Ulu Selatan</option>
+            <option value="okut">Kab. Ogan Komering Ulu Timur</option>
+            <option value="banyu">Kab. Banyuasin</option>
+            <option value="muba">Kab. Musi Banyuasin</option>
+            <option value="mura">Kab. Musi Rawas</option>
+            <option value="lahat">Kab. Lahat</option>
+            <option value="munim">Kab. Muara Enim</option>
+            <option value="oki">Kab. Ogan Komering Ilir</option>
+            <option value="oku">Kab. Ogan Komering Ulu</option>
+          </select>
+          <br />
+
+          <label for="kec">Kecamatan<span>*</span></label> <br />
+          <input type="text" name="kec" id="kec" required /> <br />
+
+          <label for="alamat">Alamat Lengkap<span>*</span></label> <br />
+          <textarea
+            name="alamat"
+            id="alamat"
+            cols="40"
+            rows="5"
+            required
+          ></textarea>
+          <br />
+
+          <label for="informasi">Skill yang anda miliki :<span>*</span></label>
+          <br />
+          <input type="checkbox" name="informasi" id="informasi" />Word
+          <input type="checkbox" name="informasi" id="informasi" />Excel
+          <input type="checkbox" name="informasi" id="informasi" />Power Point
+          <br />
+          <input type="checkbox" name="informasi" id="informasi" />Photoshop
+          <input type="checkbox" name="informasi" id="informasi" />Canva
+          <input type="checkbox" name="informasi" id="informasi" />Kinemaster
+          <br />
+          <input type="checkbox" name="informasi" id="informasi" />Lainnya
+          <input type="text" name="informasi" id="informasi" /> <br />
+        </div>
+      </div>
+
+      <button type="submit" class="submit">Kirim</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
